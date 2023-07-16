@@ -38,9 +38,6 @@ function titleCase(str, smallWords) {
 		if (match.includes("{{") || match.includes("}}")) {
 			return match
 		}
-		if (match.includes('strong')) {
-			console.log(match)
-		}
 		if (index > 0 && index + match.length !== title.length &&
 			match.search(smallWords) > -1 && title.charAt(index - 2) !== ':' &&
 			(title.charAt(index + match.length) !== '-' || title.charAt(index - 1) === '-' || match.includes("=")) &&
