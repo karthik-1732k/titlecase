@@ -35,6 +35,7 @@ function titleCase (str, smallWords) {
     return str
   return str.replace(/[A-Za-z0-9\u00C0-\u00FF]+[^\s-]*/g, function(match, index, title){
 	if(match.includes("{") || match.includes("}")){
+		console.log('working');
 		return match
 	}
 	if (index > 0 && index + match.length !== title.length &&
